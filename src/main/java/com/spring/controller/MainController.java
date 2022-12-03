@@ -15,6 +15,7 @@ public class MainController {
     // http://localhost:8080/api/fuck/
     @GetMapping("/fuck")
     public String sayFuck(){
+
         return "fuck";
     }
 }
