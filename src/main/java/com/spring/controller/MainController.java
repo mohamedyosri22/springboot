@@ -16,10 +16,16 @@ public class MainController {
     @Value("${admin.name}")
     private String name;
 
-    // http://localhost:8080/api/hello
-    @GetMapping("/hello")
+    // http://localhost:8080/api/hi
+    @GetMapping("/hi")
     public String sayHello(){
-        return "hello "+name;
+        return "hi "+name;
+    }
+
+    // http://localhost:8080/api/fuck
+    @GetMapping("/fuck")
+    public String sayFuck(){
+        return "fuck "+name;
     }
 
 }
